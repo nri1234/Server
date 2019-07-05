@@ -19,5 +19,6 @@ server.on('request', function (request, response) {
         });
     }
 });
-
-server.listen(8020);
+server.listen(8020, function (err) {
+    console.log('Opened server on', server.address());
+});
